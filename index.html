@@ -35,7 +35,20 @@
       strong {
         color: #111;
       }
-    </style>
+      
+      .flexDir {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+            .flexDir {
+                flex-direction: column;
+            }
+        }
+      </style>
   </head>
   <body>
     <article>
@@ -114,9 +127,12 @@
       </p>
     </article>
 
-    <footer>
-        <a href="https://www.bbw-hamburg.de/impressum/" target="_blank">Impressum</a>
-        <a href="https://www.bbw-hamburg.de/datenschutz/" target="_blank">Datenschutz</a>
+    <footer class="flexDir" style="gap: 2rem;justify-content: space-between;">
+        <div class="flexDir" style="gap: 0.5rem;">
+            <a href="https://www.bbw-hamburg.de/impressum/" target="_blank">Impressum</a>
+            <a href="https://www.bbw-hamburg.de/datenschutz/" target="_blank">Datenschutz</a>
+        </div>
+        <span>Ein Projekt von der FiSi21</span>
     </footer>
   </body>
 </html>
