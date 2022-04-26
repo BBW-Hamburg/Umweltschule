@@ -30,7 +30,7 @@
       strong {
         color: #111;
       }
-      
+
       .flexDir {
         display: flex;
         flex-direction: row;
@@ -50,20 +50,47 @@
         margin: auto;
       }
 
+      .scrollmenu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+
+      .scrollmenu a:hover {
+        background-color: #777;
+      }
+
       @media only screen and (max-width: 600px) {
-            .flexDir {
-                flex-direction: column;
-            }
+        .flexDir {
+          flex-direction: column;
         }
-      </style>
+      }
+    </style>
   </head>
   <body>
-    <article>
-      <a anchor="top"></a>
+    <nav class="scrollmenu" style="gap: 1rem">
+      <a href="#top" title="Zum bereich über Umweltschule" >Über Umweltschule</a>
+      <a href="#energy" title="Zum bereich über Energie">Energie</a>
+      <a href="#co2" title="Zum bereich über Co2 und H2O">Plastik & Fleisch (Co² und H²O)</a>
+      <a href="#paper" title="Zum bereich über Papier">Papier</a>
+    </nav>
+
+    <article id="top" style="margin-top: 2rem">
       <h1>Über Umweltschule</h1>
-      <p>
-        Hier könnte man text einfügen über das Projekt.
-      </p>
+      <p>Hier könnte man text einfügen über das Projekt.</p>
     </article>
 
     <article id="energy">
@@ -75,7 +102,7 @@
     </article>
 
     <article id="co2">
-      <h2 style="color: white;">Plastik & Fleisch (Co² und H²O)</h2>
+      <h2>Plastik & Fleisch (Co² und H²O)</h2>
       <p>
         Hier könnte ein text dazu stehen wie der Plastik & Fleisch (Co² und H²O)
         verbrauch vom BBW aufgelöst ist.
@@ -90,12 +117,16 @@
       </p>
     </article>
 
-    <footer class="flexDir" style="gap: 2rem;justify-content: space-between;">
-        <div class="flexDir" style="gap: 0.5rem;">
-            <a href="https://www.bbw-hamburg.de/impressum/" target="_blank">Impressum</a>
-            <a href="https://www.bbw-hamburg.de/datenschutz/" target="_blank">Datenschutz</a>
-        </div>
-        <span>Ein Projekt von der FiSi21</span>
+    <footer class="flexDir" style="gap: 2rem; justify-content: space-between">
+      <div class="flexDir" style="gap: 0.5rem">
+        <a href="https://www.bbw-hamburg.de/impressum/" target="_blank"
+          >Impressum</a
+        >
+        <a href="https://www.bbw-hamburg.de/datenschutz/" target="_blank"
+          >Datenschutz</a
+        >
+      </div>
+      <span>Ein Projekt von der FiSi21</span>
     </footer>
   </body>
 </html>
