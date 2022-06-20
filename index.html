@@ -1,274 +1,268 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nachhaltigkeit</title>
 
-    <style>
-      html {
-        scroll-behavior: smooth;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nachhaltigkeit</title>
+  <meta property="og:title" content="Projekte Schule 4.0" />
+  <meta property="og:description" content="Die BS24 ist seit 2017 als Umweltschule ausgezeichnet. Diese
+    Auszeichnung möchten wir auch im diesen Jahr behalten. Dazu ist es nötig
+    Projekte gemeinsam mit Schüler*innen durchzuführen.">
+    <meta property="og:image" content="./assets/UmweltschuleBanner_optimiert.svg">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: #266c40;
+    }
+
+    h1,
+    h2,
+    strong {
+      color: #111;
+    }
+
+    img {
+      border-radius: 0.5rem;
+    }
+
+    .flexDir {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    article {
+      min-height: 20vh;
+      max-width: 40rem;
+      padding: 2rem;
+      margin: auto;
+    }
+
+    footer {
+      max-width: 40rem;
+      padding: 2rem;
+      margin: auto;
+    }
+
+    .scrollmenu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #037682;
+      overflow: auto;
+      white-space: nowrap;
+      justify-content: center;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    .scrollmenu a:hover {
+      background-color: #005963;
+    }
+
+    .umweltLogo {
+      max-width: 12rem;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+    }
+
+    video {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+    }
+
+    audio {
+      display: block;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .flexDir {
+        flex-direction: column;
       }
 
+      .umweltLogo {
+        max-width: 14rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-          Arial, sans-serif;
-        line-height: 1.6;
-        color: #222;
-        background: #fafafa;
-        margin: 0;
-      }
-
-      img {
-        max-width: 100%;
+        color: rgb(211, 207, 201);
+        background-image: initial;
+        background-color: rgb(30, 32, 33);
       }
 
       a {
-        color: #266c40;
+        color: rgb(142, 215, 169);
       }
 
       h1,
       h2,
       strong {
-        color: #111;
+        color: rgb(221, 218, 214);
       }
+    }
+  </style>
+</head>
 
-      img {
-        border-radius: 0.5rem;
-      }
+<body>
+  <nav class="scrollmenu" style="gap: 1rem">
+    <a href="#top" title="Zum bereich über Umweltschule">Über Umweltschule</a>
+    <a href="#energy" title="Zum bereich über Energie">Energie</a>
+    <a href="#co2" title="Zum bereich über Co2 und H2O">Plastik & Lebensmittel</a>
+    <a href="#paper" title="Zum bereich über Papier">Papier</a>
+  </nav>
 
-      .flexDir {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
-      article {
-        min-height: 20vh;
-        max-width: 40rem;
-        padding: 2rem;
-        margin: auto;
-      }
-      footer {
-        max-width: 40rem;
-        padding: 2rem;
-        margin: auto;
-      }
-
-      .scrollmenu {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #037682;
-        overflow: auto;
-        white-space: nowrap;
-        justify-content: center;
-        text-align: center;
-        z-index: 1000;
-      }
-
-      .scrollmenu a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-      }
-
-      .scrollmenu a:hover {
-        background-color: #005963;
-      }
-
-      .umweltLogo {
-        max-width: 12rem;
-        aspect-ratio: 16 / 9;
-        object-fit: contain;
-      }
-
-      video {
-        aspect-ratio: 16 / 9;
-        width: 100%;
-      }
-
-      audio {
-        display: block;
-        width: 100%;
-      }
-
-      @media only screen and (max-width: 600px) {
-        .flexDir {
-          flex-direction: column;
-        }
-
-        .umweltLogo {
-          max-width: 14rem;
-        }
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: rgb(211, 207, 201);
-          background-image: initial;
-          background-color: rgb(30, 32, 33);
-        }
-
-        a {
-          color: rgb(142, 215, 169);
-        }
-
-        h1,
-        h2,
-        strong {
-          color: rgb(221, 218, 214);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="scrollmenu" style="gap: 1rem">
-      <a href="#top" title="Zum bereich über Umweltschule">Über Umweltschule</a>
-      <a href="#energy" title="Zum bereich über Energie">Energie</a>
-      <a href="#co2" title="Zum bereich über Co2 und H2O"
-        >Plastik & Lebensmittel</a
-      >
-      <a href="#paper" title="Zum bereich über Papier">Papier</a>
-    </nav>
-
-    <article id="top" style="margin-top: 2rem">
-      <h1>Über Umweltschule</h1>
-      <img src="./assets/UmweltschuleBanner_optimiert.svg" style="aspect-ratio: 22/9;min-height: 10vh;"
-        alt="Einfache möglichkeiten, um unsere Schule nachhaltiger zu gestalten! - Projekt Umweltschule"
-      />
-      <div class="flexDir" style="gap: 2rem">
-        <p>
-          Hey Du, cool, dass du hier bist und dich über Umweltschutz an unserer
-          Schule informieren möchtest.
-        </p>
-
-        <img class="umweltLogo" src="./assets/UmweltschuleinEuropa.png" />
-      </div>
+  <article id="top" style="margin-top: 2rem">
+    <h1>Über Umweltschule</h1>
+    <img src="./assets/UmweltschuleBanner_optimiert.svg" style="aspect-ratio: 22/9;min-height: 10vh;"
+      alt="Einfache möglichkeiten, um unsere Schule nachhaltiger zu gestalten! - Projekt Umweltschule" />
+    <div class="flexDir" style="gap: 2rem">
       <p>
-        Die BS24 ist seit 2017 als Umweltschule ausgezeichnet. Diese
-        Auszeichnung möchten wir auch im diesen Jahr behalten. Dazu ist es nötig
-        Projekte gemeinsam mit Schüler*innen durchzuführen.
+        Hey Du, cool, dass du hier bist und dich über Umweltschutz an unserer
+        Schule informieren möchtest.
       </p>
 
-      <p>
-        Eines dieser Projekte ist das „Schule 4.0“. Dieses Projekt konzentriert
-        sich auf den Ressourcenverbrauch an der BS24 und wie dieser reduziert
-        werden kann. Die erarbeiteten Ergebnisse findest du hier:
-      </p>
+      <img class="umweltLogo" src="./assets/UmweltschuleinEuropa.png" />
+    </div>
+    <p>
+      Die BS24 ist seit 2017 als Umweltschule ausgezeichnet. Diese
+      Auszeichnung möchten wir auch im diesen Jahr behalten. Dazu ist es nötig
+      Projekte gemeinsam mit Schüler*innen durchzuführen.
+    </p>
 
-      <p>Warum möchten wir die Auszeichnung erhalten?</p>
+    <p>
+      Eines dieser Projekte ist das „Schule 4.0“. Dieses Projekt konzentriert
+      sich auf den Ressourcenverbrauch an der BS24 und wie dieser reduziert
+      werden kann. Die erarbeiteten Ergebnisse findest du hier:
+    </p>
 
-      <p>Die Auszeichnung fördert…</p>
-      <ul>
-        <li>
-          die Beteiligung von uns an solchen Projekten und ermöglicht uns
-          Selbstwirksamkeit.
-        </li>
+    <p>Warum möchten wir die Auszeichnung erhalten?</p>
 
-        <li>
-          unser Interesse und den Einsatz für eine nachhaltige Entwicklung.
-        </li>
+    <p>Die Auszeichnung fördert…</p>
+    <ul>
+      <li>
+        die Beteiligung von uns an solchen Projekten und ermöglicht uns
+        Selbstwirksamkeit.
+      </li>
 
-        <li>
-          nachhaltig eine Schulentwicklung für eine umweltfreundliche Zukunft.
-        </li>
+      <li>
+        unser Interesse und den Einsatz für eine nachhaltige Entwicklung.
+      </li>
 
-        <li>
-          das Umweltbewusstsein von uns allen und der Lehrer*innen an der
-          Schule.
-        </li>
-      </ul>
-    </article>
+      <li>
+        nachhaltig eine Schulentwicklung für eine umweltfreundliche Zukunft.
+      </li>
 
-    <article id="energy">
-      <h2>Energie</h2>
-      <p>
-        In diesem Abschnitt findest du Infos zu dem Thema “Energie” was wir in
-        der Schule erarbeitet haben. Da Erzeugung der Energie am Meisten CO²
-        verbraucht, ist dies ein wichtiges Thema für alle, welcher für den
-        Schutz der Umwelt wichtig ist. Denn Energie wie Strom und Gas nutzt so
-        gut wie jeder Zuhause oder auf der Arbeit wie das BBW und die Schule
-        auch. Doch man muss sich fragen…
-      </p>
+      <li>
+        das Umweltbewusstsein von uns allen und der Lehrer*innen an der
+        Schule.
+      </li>
+    </ul>
+  </article>
 
-      <ul>
-        <li>
-          Wie sieht es im BBW mit dem Verbrauch von Strom sowie Gas aus und
-          welchen Anbieter haben wir?
-        </li>
-        <li>
-          Wie können wir in der Schule in kooperation mit dem BBW Energie selbst
-          einsparen und evtl. reproduzieren damit wir, der Umwelt etwas gutes
-          tun können.
-        </li>
-      </ul>
+  <article id="energy">
+    <h2>Energie</h2>
+    <p>
+      In diesem Abschnitt findest du Infos zu dem Thema “Energie” was wir in
+      der Schule erarbeitet haben. Da Erzeugung der Energie am Meisten CO²
+      verbraucht, ist dies ein wichtiges Thema für alle, welcher für den
+      Schutz der Umwelt wichtig ist. Denn Energie wie Strom und Gas nutzt so
+      gut wie jeder Zuhause oder auf der Arbeit wie das BBW und die Schule
+      auch. Doch man muss sich fragen…
+    </p>
 
-      <p>
-        Genau diese Fragen haben wir einem Mitarbeiter vom BBW in einem
-        Interview gestellt und haben diese Antworten für dich im nachfolgenden
-        Video bereitgestellt.
-      </p>
+    <ul>
+      <li>
+        Wie sieht es im BBW mit dem Verbrauch von Strom sowie Gas aus und
+        welchen Anbieter haben wir?
+      </li>
+      <li>
+        Wie können wir in der Schule in kooperation mit dem BBW Energie selbst
+        einsparen und evtl. reproduzieren damit wir, der Umwelt etwas gutes
+        tun können.
+      </li>
+    </ul>
 
-      <video
-        controls
-        preload="metadata"
-        src="./assets/energy/simpleshow_Strom_und_Heizung_im_BBW.mp4"
-      >
-        <p>Dein browser unterstützt dieses format nicht.</p>
-      </video>
-    </article>
+    <p>
+      Genau diese Fragen haben wir einem Mitarbeiter vom BBW in einem
+      Interview gestellt und haben diese Antworten für dich im nachfolgenden
+      Video bereitgestellt.
+    </p>
 
-    <article id="co2">
-      <h2>Plastik & Lebensmittel</h2>
-      <p>
-        Im Folgenden finden Sie das Script zu einem Podcast von Hamburger Solar Punks, der Nachhaltigkeit im BBW zum Thema hat. Die beiden sprechen darüber, wie sich die Schule und die Mensa in Sachen Fleisch und Plastik schlägt.
-      </p>
+    <video controls preload="metadata" src="./assets/energy/simpleshow_Strom_und_Heizung_im_BBW.mp4">
+      <p>Dein browser unterstützt dieses format nicht.</p>
+    </video>
+  </article>
 
-      <audio controls>
-        <source src="./assets/co2/co2_podcast.mp3" type="audio/mpeg">
+  <article id="co2">
+    <h2>Plastik & Lebensmittel</h2>
+    <p>
+      Im Folgenden finden Sie das Script zu einem Podcast von Hamburger Solar Punks, der Nachhaltigkeit im BBW zum Thema
+      hat. Die beiden sprechen darüber, wie sich die Schule und die Mensa in Sachen Fleisch und Plastik schlägt.
+    </p>
+
+    <audio controls>
+      <source src="./assets/co2/co2_podcast.mp3" type="audio/mpeg">
       Dein Browser unterstützt die Wiedergabe von MP3 leider nicht :/<br>
-        <a href="./assets/co2/co2_podcast.mp3">Hier kannst du das manuell herunterladen.</a>
-      </audio>
+      <a href="./assets/co2/co2_podcast.mp3">Hier kannst du das manuell herunterladen.</a>
+    </audio>
 
-      <a href="./assets/co2/co2_podcast.pdf">Script mit Quellen Herunterladen (PDF)</a>
-    </article>
+    <a href="./assets/co2/co2_podcast.pdf">Script mit Quellen Herunterladen (PDF)</a>
+  </article>
 
-    <article id="paper">
-      <h2>Papier</h2>
-      <p>
-        Im Folgenden erhältst du hier wichtige Informationen zum Thema
-        verantwortungsbewusster und nachhaltiger Umgang mit Papier. Zudem
-        bekommst du einen Überblick über verschiedene Prüfsiegel, welche eine
-        ressourcenschonende Verwertung und Herstellung von Papier sicherstellen.
-        Im Weiteren findest du hier nützliche Tipps und ein anschauliches
-        Erklärvideo.
-      </p>
-      <p>Viel Spaß beim Erkunden.</p>
-      <video
-        controls
-        preload="metadata"
-        src="./assets/paper/simpleshow_Papier_im_BBW.mp4"
-      >
-        <p>Dein browser unterstützt dieses format nicht.</p>
-      </video>
-      <a href="./assets/paper/paper.pdf">Flyer Herunterladen</a>
-    </article>
+  <article id="paper">
+    <h2>Papier</h2>
+    <p>
+      Im Folgenden erhältst du hier wichtige Informationen zum Thema
+      verantwortungsbewusster und nachhaltiger Umgang mit Papier. Zudem
+      bekommst du einen Überblick über verschiedene Prüfsiegel, welche eine
+      ressourcenschonende Verwertung und Herstellung von Papier sicherstellen.
+      Im Weiteren findest du hier nützliche Tipps und ein anschauliches
+      Erklärvideo.
+    </p>
+    <p>Viel Spaß beim Erkunden.</p>
+    <video controls preload="metadata" src="./assets/paper/simpleshow_Papier_im_BBW.mp4">
+      <p>Dein browser unterstützt dieses format nicht.</p>
+    </video>
+    <a href="./assets/paper/paper.pdf">Flyer Herunterladen</a>
+  </article>
 
-    <footer class="flexDir" style="gap: 2rem; justify-content: space-between">
-      <div class="flexDir" style="gap: 0.5rem">
-        <a href="https://www.bbw-hamburg.de/impressum/" target="_blank"
-          >Impressum</a
-        >
-        <a href="https://www.bbw-hamburg.de/datenschutz/" target="_blank"
-          >Datenschutz</a
-        >
-      </div>
-      <span>Ein Projekt von der FiSi21</span>
-    </footer>
-  </body>
+  <footer class="flexDir" style="gap: 2rem; justify-content: space-between">
+    <div class="flexDir" style="gap: 0.5rem">
+      <a href="https://www.bbw-hamburg.de/impressum/" target="_blank">Impressum</a>
+      <a href="https://www.bbw-hamburg.de/datenschutz/" target="_blank">Datenschutz</a>
+    </div>
+    <span>Ein Projekt von der FiSi21</span>
+  </footer>
+</body>
+
 </html>
